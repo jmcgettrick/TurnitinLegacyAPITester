@@ -1,0 +1,53 @@
+/* API Communication Tool */
+
+body {
+	font-family:Arial;
+	font-size:12px;
+}
+
+.group_fields {
+	display:none;
+	border:1px solid #DEDEDE;
+	padding:10px;
+	padding-bottom:0;
+	margin-bottom:10px;
+}
+
+.formrow {
+	clear:both;
+	margin-bottom:10px;
+}
+
+label {
+	float:left;
+	width:200px;
+}
+
+.message {
+	padding:10px;
+	background:#DEDEDE;
+	border:1px solid #666666;
+	font-size:10px;
+	line-height:10px;
+	margin-bottom:10px;
+}
+
+.error {
+	background:#CC0000;
+	color:#FFFFFF;
+}
+
+.success {
+	background:#00CC00;
+}
+
+table {
+	border-collapse:collapse;
+	color:#FFFFFF;
+}
+
+table tr th, table tr td {
+	font-size:10px;
+	padding:2px;
+	border:1px solid #CECECE;
+}
