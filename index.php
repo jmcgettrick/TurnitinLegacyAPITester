@@ -14,6 +14,7 @@ define('UPLOAD_DIRECTORY', dirname(__FILE__).'/uploaded_files/');
 // Turnitin Login details
 define('TII_SRC', 0);
 define('TII_AID', 0);
+define('TII_SAID', 0);
 define('TII_KEY', '');
 define('TII_APIURL', 'https://sandbox.turnitin.com/api.asp');
 
@@ -213,7 +214,7 @@ class TIIClass {
 				// execute post
 				$result = curl_exec($ch);
 
-				//print_r(curl_getinfo($ch));
+				// print_r(curl_getinfo($ch));
 
 				// close connection
 				curl_close($ch);
@@ -275,6 +276,7 @@ if (isset($_POST["submit"])) {
 	// Configure other POST variables
 	$_POST['gmtime'] = $tii->getGMT();
 	$_POST['aid'] = TII_AID;
+	$_POST['said'] = TII_SAID;
 	$_POST['diagnostic'] = TII_DIAGNOSTIC;
 	$_POST['src'] = TII_SRC;
 	$_POST['allPapers'] = 1;
