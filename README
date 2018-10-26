@@ -1,3 +1,3 @@
-This a tester for the Turnitin's legacy API.
+This a tester for Turnitin's legacy API.
 
-You will need a turnitin account and will have to edit the account settings for it to work.
+You will need a Turnitin account and you will need to edit the relevant account settings in index.php.
